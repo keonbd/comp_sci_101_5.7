@@ -1,0 +1,17 @@
+import math
+
+# Place code here.
+title = input('Enter title:\n')
+start = int(input('Enter start integer:\n'))
+end = int(input('Enter end integer:\n'))
+print()
+print(f"{title:^50}".format(title))
+print('{0:=<50}'.format('='))
+for i in range(start,end+1):
+    j = math.sqrt(i)
+    print('{0:<25}{1:>25.2f}'.format(i,j))
+print(f"{title:^30}".format(title))
+print('{0:=<30}'.format('='))
+for i in range(start,end+1):
+    j = math.sqrt(i)
+    print('{0:<15}{1:0>15.5f}'.format(i,j))
